@@ -1,0 +1,24 @@
+<!doctype html>
+<head>
+    <title>Adding</title>
+    <link rel ='stylesheet' type="text/css" href="{{ url_for('static', filename ='addbg.css' )}}">
+</head>
+
+<body>
+ <input class="button goHome" type="button" value="Home" onclick="window.location.href='/'" /><br>
+    <div class="center">
+        <form action = "{{ url_for('add_course') }}" method="post">
+       <h1> Add a New Course </h1>
+        Course ID
+        <input type = "text" placeholder="Enter Course ID" minlength="1" name = "courseID" required/></br>
+        Course Description
+        <input type ="text" placeholder="Course Description" name ="courseDesc" minlength="1"  required/></br>
+
+
+       <br><input type ="submit" value ="Add Course"/><br>
+             <a href = "/managestud"><input class= "button backButton" type = "button" value = "Back" /></a>
+
+    </form>
+    </div>
+
+</body>

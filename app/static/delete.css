@@ -1,0 +1,97 @@
+#students{
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#students td, #students th{
+    border: 1px solid #ddd;
+    padding: 1px;
+    color: black;
+}
+#students tr:nth-child(even){background-color: gray;}
+#students tr:nth-child(odd){background-color: #c4bdcb}
+#students tr:hover {background-color: gray;}
+
+#students th {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: left;
+    background-color: cornflowerblue;
+    color: white;
+}
+body{
+    background-color: cornflowerblue;
+           background-image: url('bgbg.jpg');
+}
+h1{
+    color: white;
+}
+form{
+    color: white;
+}
+input[type=text] {
+    width: 50%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+div{
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 20px;
+}
+
+.center {
+    line-height: 80px;
+    height: 100px;
+    border: 3px solid gold;
+    text-align: center;
+}
+
+.center p {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+input[type=radio] {
+    width: 10%;
+    height: 1.3em;
+}
+
+input[type=submit]{
+    background-color: royalblue;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button{
+    background-color: royalblue;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.backButton {border-radius: 12px;}

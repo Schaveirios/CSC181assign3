@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <title>All Students</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'table.css')}}">
+</head>
+   <body>
+
+    <input class="button goHome" type="button" value="Home" onclick="window.location.href='/'" /><br>
+      <div class="center">
+      <h1> List of All Courses</h1>
+          <table id = students>
+         <tr>
+            <th>Course ID</th>
+             <th>         Course Description</th>
+
+         </tr>
+
+         {% for row in rows %}
+            <tr>
+               <td>{{row["course_id"]}}</td>
+               <td>{{row["coursedesc"]}}</td>
+
+            </tr>
+         {% endfor %}
+      </table>
+           <a href = "/managecourse"><input class= "button backButton" type = "button" value = "Back" /></a>
+
+      </div>
+
+   </body>
+</html>
