@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <title>Delete</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'delete.css')}}">
+</head>
+  <body>
+    <div class="center">
+      <h1>Delete Course</h1>
+
+      <form action="{{url_for('delete_course')}}" method = "post">
+
+          Enter ID no:
+          <input type="text" name = "courseid"><br>
+          <input type = "submit" name = "submit" /><br>
+
+
+              <table id="students">
+            <thead>
+                <th>Course ID</th>
+                <th>Course Description</th>
+
+            </thead>
+
+            {% for row in rows %}
+                <tr>
+                    <td>{{row["course_id"]}}</td>
+                    <td>{{row["coursedesc"]}}</td>
+
+                </tr>
+            {% endfor %}
+          </table>
+             <a href = "/managecourse"><input class= "button backButton" type = "button" value = "Back" /></a>
+      </form>
+    </div>
+  </body>
+</html>
+
+
+

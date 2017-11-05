@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename ='index.css') }}">
+
+</head>
+<body>
+    <div class="center">
+
+    <h1> Welcome! </h1>
+    <h1>Features</h1>
+   <form>
+         <input class="button ManageStud" type="button" value="Manage Student" onclick="window.location.href='/managestud'" /><br>
+        <input class="button ManageCourse" type="button" value="Manage Courses" onclick="window.location.href='/managecourse'" /><br>
+       <input class="button ViewDB" type="button" value="View Database" onclick="window.location.href='/CourseTable'" /><br>
+       <input class="button MyButton4" type="button" value="Search" onclick="window.location.href='/search'" /><br>
+
+
+
+   </form>
+    </div>
+
+
+
+</body>
+</html>

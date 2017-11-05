@@ -1,0 +1,44 @@
+body{
+    background-color: cornflowerblue;
+       background-image: url('bgbg.jpg');
+}
+
+h1{
+    color: white;
+    font-style: normal;
+
+}
+h2{
+    color: white;
+    font-style: inherit;
+}
+.button{
+    background-color: royalblue;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.MyButton {border-radius: 12px;}
+.MyButton1 {border-radius: 12px;}
+.MyButton2 {border-radius: 12px;}
+.MyButton3 {border-radius: 12px;}
+.MyButton4 {border-radius: 12px;}
+.viewdb {border-radius: 12px;}
+.center {
+    line-height: 80px;
+    height: 80px;
+    border: 3px solid gold;
+    text-align: center;
+}
+
+.center p {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+}

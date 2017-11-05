@@ -1,0 +1,72 @@
+#students{
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#students td, #students th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#students tr:nth-child(even){background-color: white;}
+#students tr:nth-child(odd){background-color: #cccccc;}
+#students tr:hover {background-color: gray;}
+
+#students th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: cornflowerblue;
+    color: white;
+}
+body{
+    background-color: cornflowerblue;
+           background-image: url('bgbg.jpg');
+}
+.button{
+    background-color: royalblue;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.goHome {border-radius: 12px;}
+
+.center {
+    line-height: 20px;
+    height: 20px;
+
+    text-align: center;
+}
+
+.center p {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h1{
+    color: white;
+}
+h2{
+    color:white;
+}
+.button{
+    background-color: royalblue;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.goHome {border-radius: 12px;}
+.backButton{border-radius: 12px;}

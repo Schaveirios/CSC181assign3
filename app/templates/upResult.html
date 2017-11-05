@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>Students</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename ='update.css') }}">
+</head>
+   <body>
+      <div class="center">
+          <table id="students">
+         <thead>
+            <th>ID no</th>
+            <th>First name</th>
+            <th>Middle name</th>
+            <th>Last name</th>
+            <th>Gender</th>
+            <th>Course</th>
+            <th>Year Level</th>
+         </thead>
+
+         {% for row in rows %}
+            <tr>
+               <td>{{row["idNo"]}}</td>
+               <td>{{row["firstn"]}}</td>
+               <td>{{row["midname"]}}</td>
+               <td>{{row["lastn"]}}</td>
+               <td>{{row["gnder"]}}</td>
+               <td>{{row["crse"]}}</td>
+               <td>{{row["yrlevel"]}}</td>
+
+            </tr>
+         {% endfor %}
+      </table>
+     <h2>{{ mem }}</h2>
+      <h1><a href = "/"><input class="button goHome" type = "button" value = "Home" /><br></a></h1>
+      </div>
+
+
+   </body>
+</html>
